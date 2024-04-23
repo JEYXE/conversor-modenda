@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public record Conversion() {
+public record Conversion(Double conversion_rate,
+                         Double conversion_result) {
 }
