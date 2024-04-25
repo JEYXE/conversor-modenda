@@ -8,7 +8,6 @@ import java.net.http.HttpResponse;
 public class ConsultaMoneda {
     public Moneda buscaMonedas(){
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/de1a5e6e22c2ec42d3020195/codes");
-
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(direccion)
